@@ -11,56 +11,67 @@
     </head>
 <body>
 	<nav class="menu">
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
+		<p>
+    <a href="#home">Home</a>
+    <a href="#spacer1">Portfolio</a>
+    <a href="#trigger2">Other Stuff</a>
+    <a href="contact.html">Contact</a></p>
 	</nav>
-  <header>
+  <header id="home">
     <img alt="Nathan McElwain logo" src="assets/img/nathan-logo-trans-new.png" />
   </header>
 	<section class="top-line">
-		<h2>Web Developer, Audio Engineer, Punctilious Knob Tweaker, Incessant Key Stroker</h2>
-		<p>My name is Nathan McElwain, hailing from San Francisco California. A purveyor clean designs and clever execution, with personality and stylized polish.</p>
+		<h2>Web Developer | Audio Engineer</h2>
+		<h3>Hello, my name is Nathan McElwain, San Francisco's native son.</h3>
+    <p>Punctilious knob-tweaker, incessant key-stroker and subsequent screen-squinter.
+      I'm a purveyor of clean designs brimming with personality. Delivered with stylized polish and clever execution.</p>
     <div id="direction"><i class="fa fa-angle-double-down"></i></div>
 	</section>
   <div id="spacer1"></div>
+  <div id="trigger1"></div>
 	<section class="features">
 		<ul>
-      <div id="trigger1"></div>
-			<li class="feat">
+			<li class="feat spacey">
 				<a href="spacey.html"><img src="assets/img/spaceyscreen.png"></a>
         <h2>Spacey: Tonal Gravity</h2>
 				<p>Web Audio and Canvas APIs with a bit pf PhysicsJS to represent gravity with sound.</p>
 			</li>
-			<li class="feat">
+			<li class="feat cloudbrowse">
 				<img src="assets/img/cloud-browse.png">
 				<h2>Cloudbrowse</h2>
-				<p>Easily find samples under "creative-commons share alike" licence on Soundcloud using the Soundcloud API. ALAX calls via Soundcloud SDK.</p>
+				<p>Easily find samples under "creative-commons share alike" licence on Soundcloud using the Soundcloud API. AJAX calls via Soundcloud SDK.</p>
 			</li>
-      <div></div>
-			<li class="feat">
+			<li class="feat quiz">
 				<img src="assets/img/dante-quiz.png">
-				<h2>Dante Aligieri Quiz</h2>
+				<h2>Dante Alighieri Quiz</h2>
 				<p>A simple quiz app that employs user input validation and comparison. A bit of VelocityJS for looks.</p>
+			</li>
+      <li class="feat tacklr">
+				<img src="assets/img/tacklr-shot.png">
+				<h2>Tacklr</h2>
+				<p>Routing and resource location app. AngularJs & Google Maps API using the Ionic Framework. A project
+        that I continue to work on and improve</p>
 			</li>
       <div id="trigger2"></div>
 		</ul>
   </section>
   <div id="spacer2"></div>
+  <section class="music-page">
+    <h1>...By the way, did you know that I also happen to be a music producer? Want to hear some stuff? Check out my producer page!</h1>
+  </section>
   <section>
     <div class="call">
-      <a id="game" href="spacey.html">Let's Go!</a>
+      <a id="game" target="_blank" href="https://www.soundcloud.com/cutty_bang">Cutty Bang</a>
     </div>
   </section>
 	<footer>
 		<div class="social">
-			<a id="fb" href="#"><i class="fa fa-facebook-square"></i></a>
-			<a id="twit" href="#"><i class="fa fa-twitter-square"></i></a>
-			<a id="goog" href="#"><i class="fa fa-google-plus-square"></i></a>
+			<a id="fb" href="https://www.facebook.com/nmcelwain"><i class="fa fa-facebook-square"></i></a>
+			<a id="twit" href="https://twitter.com/Cutty_Bang"><i class="fa fa-twitter-square"></i></a>
+			<a id="goog" href="https://github.com/CuttyBang"><i class="fa fa-github-square"></i></a>
 		</div>
 		<a id="legal" href="#"><p>legal</p></a>
+    <p id="copyright">&copy; Copyright 2016 Nathan McElwain/Cutty Bang Multimedia</p>
 	</footer>
   <link async rel='stylesheet' type='text/css' href="assets/css/normalize.css">
   <link defer rel='stylesheet' type='text/css' href="assets/css/main.min.css">
@@ -74,8 +85,8 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script>
 <script type="text/javascript" src="assets/js/app.js"></script>
-<script type="text/javascript">
-
-</script>
+<script type="text/javascript"></script>
 </html>

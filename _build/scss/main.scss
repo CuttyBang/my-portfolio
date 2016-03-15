@@ -52,7 +52,9 @@ ul {
   list-style-type: none;
 }
 
-.demo {
+.music-page {
+  color: $font-color;
+  margin-bottom: 2em;
 }
 
 .git-link {
@@ -77,36 +79,45 @@ NAVIGATION
 *****************/
 
 nav {
-  height: 3.5em;
+  height: 3em;
   margin-top: 0;
-  ul {
+  width: 100%;
+  p{
     float: left;
-    margin-top: 3em;
-    margin-bottom: 0;
-  }
-  li {
-    margin-bottom: 1em;
-    cursor: pointer;
-    & :hover {
-      color: $link-hover;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    width: 100%;
   }
   a {
+    cursor: pointer;
     text-decoration: none;
     font-weight: 300;
-    color: $link-color;
+    color: $font-color;
+    margin-left: 1em;
+    & :hover {
+      color: $link-hover;
     }
   }
   @media screen and ($tablet) {
-    ul {
-      padding-left: 5%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 4em;
+    background-color: $background-color;
+    z-index: 100;
+    a {
+      margin-left: 8%;
     }
-    li {
+    p {
       font-size: 1.2em;
+      width: 100%;
     }
   }
   @media screen and ($desktop) {
-    li {
+    p {
       font-size: 1.5em;
+      width: 100%;
     }
   }
 }
@@ -116,17 +127,17 @@ HEADER AND TOPLINE STYLES
 *****************/
 
 header {
-  margin: 3em auto;
+  margin: 0 auto 3em;
   img {
     width: 90%;
-    margin: 3em 5% 3em;;
+    margin: 3em 5% 0.5em;;
 
   }
   @media screen and ($tablet) {
       width: 100%;
       img {
         width: 90%;
-        margin: 3em 5%;
+        margin: 4em 5%;
       }
   }
   @media screen and ($desktop) {
@@ -134,7 +145,7 @@ header {
       margin-bottom: 2em;
       img {
         width: 90%;
-        margin: 90px 5% 1em;
+        margin: 100px 5% 1em;
       }
   }
 }
@@ -148,7 +159,13 @@ header {
     color: $font-color;
     font-weight: 700;
     font-size: 2em;
-    margin-top: 1.5em;
+    margin-top: 2em;
+  }
+  h3 {
+    color: $font-color;
+    font-family: $font-stack2;
+    font-weight: 700;
+    margin-top: 0.5em;
   }
   p {
     font-family: $font-stack2;
@@ -165,25 +182,35 @@ header {
       text-align: center;
       font-size: 2.5em;
     }
+    h3 {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+
+    }
     p {
       width: 90%;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 4em;
-      text-align: center;
+      text-align: left;
     }
   }
   @media screen and ($desktop) {
     margin: 0 auto;
     h2 {
-      width: 90%;
       text-align: center;
-      font-size: 3.25em;
+      width: 100%;
+      font-size: 3em;
+    }
+    h3 {
+      text-align: center;
+      width: 100%;
     }
     p {
       width: 80%;
       font-size: 1.4em;
-      text-align: center;
+      text-align: left;
+
     }
   }
 }
@@ -195,31 +222,32 @@ header {
   font-weight: 500;
 }
 #spacer1 {
-  height: 50px;
-}
-@media screen and ($tablet) {
-    height:300px;
-}
-@media screen and ($desktop) {
-    height: 300px;
+  height: 30px;
+
+  @media screen and ($tablet) {
+      height: 200px;
+  }
+  @media screen and ($desktop) {
+      height: 150px;
+  }
 }
 
 #spacer2 {
-  height: 100px
-}
-@media screen and ($tablet) {
-    height: 200px;
-}
-@media screen and ($desktop) {
-    height: 200px;
-}
+  height: 150px;
 
+  @media screen and ($tablet) {
+      height: 250px;
+  }
+  @media screen and ($desktop) {
+      height: 250px;
+  }
+}
 /*****************
 FEATURES UL
 *****************/
 
 .features {
-
+  opacity: 0;
   ul{
     padding-left: 0;
     li {
@@ -313,9 +341,10 @@ SOCIAL NETWORK LINKS
 
 .social {
   font-size: 30px;
-  color: $link-color;
-  margin-bottom: 6em;
+  color: $font-color;
+  margin-bottom: 3em;
   margin-top: 4em;
+  text-align: center;
   a {
     margin-left: 1.25em;
     text-decoration: none;
@@ -332,14 +361,15 @@ SOCIAL NETWORK LINKS
   }
   @media screen and ($tablet) {
     font-size: 2em;
-    }
-    @media screen and ($desktop) {
+  }
+  @media screen and ($desktop) {
     font-size: 3em;
-    }
+  }
+
 }
 
 /*****************
-FOOTER AND LEAGAL
+FOOTER AND LEGAL
 *****************/
 
 footer {
@@ -355,4 +385,11 @@ footer {
       color: $link-click;
     }
   }
+}
+
+#copyright {
+  color: #babbbb;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 0;
 }

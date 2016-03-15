@@ -36,6 +36,10 @@ body {
 ul {
   list-style-type: none; }
 
+.music-page {
+  color: #554b58;
+  margin-bottom: 2em; }
+
 .git-link {
   margin-bottom: 2em; }
 
@@ -51,51 +55,62 @@ ul {
 NAVIGATION
 *****************/
 nav {
-  height: 3.5em;
-  margin-top: 0; }
-  nav ul {
+  height: 3em;
+  margin-top: 0;
+  width: 100%; }
+  nav p {
     float: left;
-    margin-top: 3em;
-    margin-bottom: 0; }
-  nav li {
-    margin-bottom: 1em;
-    cursor: pointer; }
-    nav li :hover {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    width: 100%; }
+  nav a {
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 300;
+    color: #554b58;
+    margin-left: 1em; }
+    nav a :hover {
       color: #576c88; }
-    nav li a {
-      text-decoration: none;
-      font-weight: 300;
-      color: #393c41; }
   @media screen and (min-width: 768px) {
-    nav ul {
-      padding-left: 5%; }
-    nav li {
-      font-size: 1.2em; } }
+    nav {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 4em;
+      background-color: #fcfbeb;
+      z-index: 100; }
+      nav a {
+        margin-left: 8%; }
+      nav p {
+        font-size: 1.2em;
+        width: 100%; } }
   @media screen and (min-width: 1024px) {
-    nav li {
-      font-size: 1.5em; } }
+    nav p {
+      font-size: 1.5em;
+      width: 100%; } }
 
 /*****************
 HEADER AND TOPLINE STYLES
 *****************/
 header {
-  margin: 3em auto; }
+  margin: 0 auto 3em; }
   header img {
     width: 90%;
-    margin: 3em 5% 3em; }
+    margin: 3em 5% 0.5em; }
   @media screen and (min-width: 768px) {
     header {
       width: 100%; }
       header img {
         width: 90%;
-        margin: 3em 5%; } }
+        margin: 4em 5%; } }
   @media screen and (min-width: 1024px) {
     header {
       max-width: 100%;
       margin-bottom: 2em; }
       header img {
         width: 90%;
-        margin: 90px 5% 1em; } }
+        margin: 100px 5% 1em; } }
 
 /*462x413*/
 .top-line {
@@ -105,7 +120,12 @@ header {
     color: #554b58;
     font-weight: 700;
     font-size: 2em;
-    margin-top: 1.5em; }
+    margin-top: 2em; }
+  .top-line h3 {
+    color: #554b58;
+    font-family: "Muli", Helvetica, sans-serif;
+    font-weight: 700;
+    margin-top: 0.5em; }
   .top-line p {
     font-family: "Muli", Helvetica, sans-serif;
     width: 100%;
@@ -120,23 +140,29 @@ header {
         margin: 0 auto;
         text-align: center;
         font-size: 2.5em; }
+      .top-line h3 {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center; }
       .top-line p {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 4em;
-        text-align: center; } }
+        text-align: left; } }
   @media screen and (min-width: 1024px) {
     .top-line {
       margin: 0 auto; }
       .top-line h2 {
-        width: 90%;
         text-align: center;
-        font-size: 3.25em; }
+        width: 100%;
+        font-size: 3em; }
+      .top-line h3 {
+        text-align: center;
+        width: 100%; }
       .top-line p {
         width: 80%;
         font-size: 1.4em;
-        text-align: center; } }
+        text-align: left; } }
 
 #direction {
   font-size: 3em;
@@ -146,64 +172,64 @@ header {
   font-weight: 500; }
 
 #spacer1 {
-  height: 50px; }
-
-@media screen and (min-width: 768px) {
-  height: 300px; }
-
-@media screen and (min-width: 1024px) {
-  height: 300px; }
+  height: 30px; }
+  @media screen and (min-width: 768px) {
+    #spacer1 {
+      height: 200px; } }
+  @media screen and (min-width: 1024px) {
+    #spacer1 {
+      height: 150px; } }
 
 #spacer2 {
-  height: 100px; }
-
-@media screen and (min-width: 768px) {
-  height: 200px; }
-
-@media screen and (min-width: 1024px) {
-  height: 200px; }
+  height: 150px; }
+  @media screen and (min-width: 768px) {
+    #spacer2 {
+      height: 250px; } }
+  @media screen and (min-width: 1024px) {
+    #spacer2 {
+      height: 250px; } }
 
 /*****************
 FEATURES UL
 *****************/
-.features ul {
-  padding-left: 0; }
-  .features ul li {
-    margin-left: .75em; }
-    .features ul li img {
-      height: 207px;
-      width: 231px;
-      border: 5px solid #393c41;
-      border-radius: 100%; }
-    .features ul li h2 {
-      font-size: 2em;
-      margin-bottom: 0.25em;
-      margin-top: 0.1em; }
-    .features ul li p {
-      font-family: "Muli", Helvetica, sans-serif;
-      font-weight: 300;
-      margin-bottom: 2em;
-      margin-top: 0.2em; }
-
-@media screen and (min-width: 768px) {
-  .features {
-    text-align: center; }
-    .features ul {
-      width: 90%;
-      padding-left: 0;
-      margin: 0 auto; }
-      .features ul li {
-        margin-left: 0; }
-        .features ul li img {
-          height: 275.33px;
-          width: 308px; } }
-
-@media screen and (min-width: 1024px) {
+.features {
+  opacity: 0; }
   .features ul {
-    margin: 0 auto; }
-    .features ul li img {
-      height: 413px;
-      width: 413px; } }
+    padding-left: 0; }
+    .features ul li {
+      margin-left: .75em; }
+      .features ul li img {
+        height: 207px;
+        width: 231px;
+        border: 5px solid #393c41;
+        border-radius: 100%; }
+      .features ul li h2 {
+        font-size: 2em;
+        margin-bottom: 0.25em;
+        margin-top: 0.1em; }
+      .features ul li p {
+        font-family: "Muli", Helvetica, sans-serif;
+        font-weight: 300;
+        margin-bottom: 2em;
+        margin-top: 0.2em; }
+  @media screen and (min-width: 768px) {
+    .features {
+      text-align: center; }
+      .features ul {
+        width: 90%;
+        padding-left: 0;
+        margin: 0 auto; }
+        .features ul li {
+          margin-left: 0; }
+          .features ul li img {
+            height: 275.33px;
+            width: 308px; } }
+  @media screen and (min-width: 1024px) {
+    .features ul {
+      margin: 0 auto; }
+      .features ul li img {
+        height: 413px;
+        width: 413px; } }
 
 /*****************
 CALL TO ACTION
@@ -240,9 +266,10 @@ SOCIAL NETWORK LINKS
 *****************/
 .social {
   font-size: 30px;
-  color: #393c41;
-  margin-bottom: 6em;
-  margin-top: 4em; }
+  color: #554b58;
+  margin-bottom: 3em;
+  margin-top: 4em;
+  text-align: center; }
   .social a {
     margin-left: 1.25em;
     text-decoration: none;
@@ -261,7 +288,7 @@ SOCIAL NETWORK LINKS
       font-size: 3em; } }
 
 /*****************
-FOOTER AND LEAGAL
+FOOTER AND LEGAL
 *****************/
 footer {
   text-align: center;
@@ -273,3 +300,9 @@ footer {
       color: #576c88; }
     footer a:active {
       color: #e9e9cb; }
+
+#copyright {
+  color: #babbbb;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 0; }

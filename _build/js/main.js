@@ -1,6 +1,7 @@
 $(document).ready(function() {
   navs();
   head();
+  $.localScroll(1000, {offset: 60});
 
   var controller = new ScrollMagic.Controller();
   var scene = new ScrollMagic.Scene({
@@ -35,8 +36,8 @@ $(document).ready(function() {
   }
 
   function navs(){
-    $('.menu ul li').velocity('transition.slideRightIn', {
-      stagger: 200, drag: true
+    $('.menu a').velocity('transition.bounceDownIn', {
+      stagger: 200
     });
   }
 
@@ -46,7 +47,7 @@ $(document).ready(function() {
     });
   }
 
-  $('.features').velocity({opacity: 0});
+  //$('.features').velocity({opacity: 0});
 
   $('.top-line').velocity(
     {opacity: 0}
